@@ -17,7 +17,7 @@ let saveUser = async ()=> {
   const res =  doRequest('https://api.xn--ensea-rta.cl/external/v1/saveUser');
   return res;
 }
-let NotificateUser = async ()=> {
+let notificateUser = async ()=> {
   const res =  doRequest('https://api.xn--ensea-rta.cl/external/v1/saveUser');
   return res;
 }

@@ -41,5 +41,5 @@ module.exports = {getUser:getUser,
                   getUsers:getUsers,
                   getApp:getApp,
                   saveUser:saveUser,
-                  NotificateUser:NotificateUser,
+                  notificateUser:notificateUser,
                   saveAppSetting:saveAppSetting};

@@ -9,30 +9,30 @@ function doRequest(url) {
 }
 
 let getUser = async ()=> {
-  const res =  doRequest('https://api.xn--ensea-rta.cl/external/v1/getUser');
+  const res =  doRequest('https://api.xn--ensea-rta.cl/external/v1/user');
   return res;
 }
 
 let saveUser = async ()=> {
-  const res =  doRequest('https://api.xn--ensea-rta.cl/external/v1/saveUser');
+  const res =  doRequest('https://api.xn--ensea-rta.cl/external/v1/user');
   return res;
 }
 let notificateUser = async ()=> {
-  const res =  doRequest('https://api.xn--ensea-rta.cl/external/v1/saveUser');
+  const res =  doRequest('https://api.xn--ensea-rta.cl/external/v1/notificateUser');
   return res;
 }
 
 let getUsers = async ()=> {
-  const res =  doRequest('https://api.xn--ensea-rta.cl/external/v1/getUsers');
+  const res =  doRequest('https://api.xn--ensea-rta.cl/external/v1/users');
   return res;
 }
 
 let getApp = async ()=> {
-  const res =  doRequest('https://api.xn--ensea-rta.cl/external/v1/getApp');
+  const res =  doRequest('https://api.xn--ensea-rta.cl/external/v1/app');
   return res;
 }
 let saveAppSetting = async ()=> {
-  const res =  doRequest('https://api.xn--ensea-rta.cl/external/v1/getApp');
+  const res =  doRequest('https://api.xn--ensea-rta.cl/external/v1/app');
   return res;
 }
 

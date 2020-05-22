@@ -57,7 +57,7 @@ class Ejemplo extends Component {
     render() {
        let user = ensena.User() // Obtiene el usuario
        let ctx = ensena.Ctx() // Obtiene el contexto del usuario dentro de este existe User que el usuario que esta en la linea anterior
-       ctx.Data.id++  // Dentro del contexto existe un espacio llamado Data el cual sirve para que la aplicacion pueda guardar algo y recuperarlo posteriormente
+       ctx.Data={id:1} // Dentro del contexto existe un espacio llamado Data el cual sirve para que la aplicacion pueda guardar algo y recuperarlo posteriormente
        ensena.SaveUser(ctx.Data) // Guarda el contexto data en el usuraio correspondiente 
 
         return <div>

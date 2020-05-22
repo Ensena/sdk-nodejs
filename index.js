@@ -86,7 +86,7 @@ let Ctx= ()=>{
 }
 
 module.exports = {
-  ctx:ctx,
+  Ctx:Ctx,
   User:User,
   SetApp: SetApp,
   SetWebUser: SetWebUser,

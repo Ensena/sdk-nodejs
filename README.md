@@ -1,6 +1,6 @@
 # Primer SDK para enseña.cl
 
-# Primer paso para integración con Frameworkd REACT
+# Primer paso para integración con Libreria REACT
 
 En tu terminal instala este paquete
 ```

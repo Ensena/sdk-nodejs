@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
 let Ensena_key = ""
 let User_key = ""
+let user ={Status:false}
 
 function doRequest(url) {
   return new Promise((resolve, reject) => {
@@ -15,25 +16,25 @@ let getUser = async (user,requestuser) => {
   return res;
 }
 
-let saveUser = async () => {
-  const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/users');
+let saveUser = async (data,user,requestuser) => {
+  const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/users'+User_key);
   return res;
 }
-let notificateUser = async () => {
-  const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/notificateUser');
-  return res;
-}
-
-let getUsers = async () => {
-  const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/users');
+let notificateUser = async (user,requestuser) => {
+  const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/notificateUser/'+User_key);
   return res;
 }
 
-let getApp = async () => {
+let getUsers = async (requestuser) => {
+  const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/users');
+  return res;
+}
+
+let getApp = async (requestuser) => {
   const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/app');
   return res;
 }
-let saveAppSetting = async () => {
+let saveAppSetting = async (requestuser) => {
   const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/app');
   return res;
 }
@@ -41,16 +42,18 @@ let saveAppSetting = async () => {
 let SetApp = (key) => {
   Ensena_key = key
 }
-let SetWebUser = () => {
+let SetWebUser =async () => {
   let url_string = window.location.href
   let url = new URL(url_string);
   User_key = url.searchParams.get("TOKEN");
-  getUser().then((data)=>{ 
-    if (data.Status){
-      console.log("ERROR MSG : ",data.Msg)
-    }
+  let data = await  getUser()
+  console.log("data",data)
+  if (data.Status){
+    console.log("ERROR MSG : ",data.Msg)
+  }
 
-   })
+
+
 }
 
 

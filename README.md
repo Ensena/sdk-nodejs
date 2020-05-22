@@ -61,10 +61,10 @@ class Ejemplo extends Component {
        ensena.SaveUser(ctx.Data) // Guarda el contexto data en el usuraio correspondiente 
 
         return <div>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <p>Nombre : {user.Name}</p>
+            <p>Apellido : {user.LastName}</p>
+            <p>Email : {user.Email}</p>
+            <p>id : {ctx.Data.id}</p>
 
 
         </div>

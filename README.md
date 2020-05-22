@@ -3,13 +3,13 @@
 # Primer paso para integración con Libreria REACT
 
 En tu terminal instala este paquete
-```
+``` bash
 npm i -D github:Ensena/sdk-nodejs#master
 ```
 
 
 Luego en tu archivo index.js reemplaza tu archivo desde esta forma
-```
+``` js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -25,7 +25,7 @@ ReactDOM.render(
 serviceWorker.unregister();
 ```
 Para que se vea de la siguiente forma esto incorpora tu proyecto con los datos enseña.cl
-```
+``` js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -44,8 +44,8 @@ ensena.SetWebUser().then(()=>{
 serviceWorker.unregister();
 ```
 
-#Segundo paso de intregación
-```
+# Segundo paso de intregación
+``` js 
 import ensena from 'ensena'
 ```
 

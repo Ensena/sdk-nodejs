@@ -42,25 +42,25 @@ let getUser = async (user,requestuser) => {
 
 let saveUser = async (data,user,requestuser) => {
   ctx.Data=data
-  const res = put('https://api.xn--ensea-rta.cl/external/v1/users'+User_key,data);
+  const res = put('users'+User_key,data);
   return res;
 }
 let notificateUser = async (user,requestuser) => {
-  const res = post('https://api.xn--ensea-rta.cl/external/v1/notificateUser/'+User_key);
+  const res = post('notificateUser/'+User_key);
   return res;
 }
 
 let getUsers = async (requestuser) => {
-  const res = get('https://api.xn--ensea-rta.cl/external/v1/users');
+  const res = get('users');
   return res;
 }
 
 let getApp = async (requestuser) => {
-  const res = get('https://api.xn--ensea-rta.cl/external/v1/app');
+  const res = get('app');
   return res;
 }
 let saveAppSetting = async (requestuser) => {
-  const res = get('https://api.xn--ensea-rta.cl/external/v1/app');
+  const res = get('app');
   return res;
 }
 

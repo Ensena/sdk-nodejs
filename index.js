@@ -81,6 +81,10 @@ let User= ()=>{
   return ctx.User
 }
 
+let Ctx= ()=>{
+  return ctx
+}
+
 module.exports = {
   ctx:ctx,
   User:User,

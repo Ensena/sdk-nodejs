@@ -4,19 +4,19 @@ let User_key = ""
 
 function doRequest(url) {
   return new Promise((resolve, reject) => {
-    fetch(url)
+    fetch(url,{ headers: { 'Content-Type': 'application/json' , 'authorization':User_key,'api-key':Ensena_key }})
       .then(res => res.json())
       .then(json => { resolve(json) });
   });
 }
 
 let getUser = async (user,requestuser) => {
-  const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/user');
+  const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/users');
   return res;
 }
 
 let saveUser = async () => {
-  const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/user');
+  const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/users');
   return res;
 }
 let notificateUser = async () => {

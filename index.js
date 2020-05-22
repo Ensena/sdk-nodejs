@@ -55,7 +55,7 @@ let SetWebUser =async () => {
   }
 }
 module.exports = {
-  ctx:cxt,
+  ctx:ctx,
   user:ctx.User,
   SetApp: SetApp,
   SetWebUser: SetWebUser,

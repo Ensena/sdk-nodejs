@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 let Ensena_key = ""
 let User_key = ""
-let user ={Status:false}
+let ctx ={Status:false,User:{}}}
 
 function doRequest(url) {
   return new Promise((resolve, reject) => {
@@ -15,6 +15,8 @@ let getUser = async (user,requestuser) => {
   const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/users/'+User_key);
   return res;
 }
+
+
 
 let saveUser = async (data,user,requestuser) => {
   const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/users'+User_key);
@@ -47,17 +49,14 @@ let SetWebUser =async () => {
   let url = new URL(url_string);
   User_key = url.searchParams.get("TOKEN");
   let data = await  getUser()
-  console.log("data",data)
-  if (data.Status){
+  ctx= data
+  if (!data.Status){
     console.log("ERROR MSG : ",data.Msg)
   }
-
-
-
 }
-
-
 module.exports = {
+  ctx:cxt,
+  user:ctx.User,
   SetApp: SetApp,
   SetWebUser: SetWebUser,
   getUser: getUser,

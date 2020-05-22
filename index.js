@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 let Ensena_key = ""
 let User_key = ""
-let ctx ={Status:false,User:{}}}
+let ctx ={Status:false,User:{}}
 
 function doRequest(url) {
   return new Promise((resolve, reject) => {

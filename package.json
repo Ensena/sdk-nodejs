@@ -1,0 +1,22 @@
+{
+  "name": "ensena",
+  "version": "1.0.0",
+  "description": "Sdk To connect your app to ensena ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ensena/sdk-nodejs.git"
+  },
+  "keywords": [
+    "ensena"
+  ],
+  "author": "Manuel Alba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ensena/sdk-nodejs/issues"
+  },
+  "homepage": "https://github.com/Ensena/sdk-nodejs#readme"
+}

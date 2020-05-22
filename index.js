@@ -11,7 +11,7 @@ function doRequest(url) {
 }
 
 let getUser = async (user,requestuser) => {
-  const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/users');
+  const res = doRequest('https://api.xn--ensea-rta.cl/external/v1/users/'+User_key);
   return res;
 }
 

@@ -86,10 +86,10 @@ module.exports = {
   User:User,
   SetApp: SetApp,
   SetWebUser: SetWebUser,
-  getUser: getUser,
-  getUsers: getUsers,
-  getApp: getApp,
-  saveUser: saveUser,
-  notificateUser: notificateUser,
-  saveAppSetting: saveAppSetting
+  GetUser: getUser,
+  GetUsers: getUsers,
+  GetApp: getApp,
+  SaveUser: saveUser,
+  NotificateUser: notificateUser,
+  SaveAppSetting: saveAppSetting
 };

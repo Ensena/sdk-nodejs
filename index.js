@@ -15,7 +15,7 @@ function get(url) {
 function post(url,body) {
   return new Promise((resolve, reject) => {
     fetch(url_base+url,{       
-      method: 'post',
+      method: 'POST',
       body:    JSON.stringify(body),
       headers: {
       'Content-Type': 'application/json' , 'authorization':User_key,'api-key':Ensena_key }})
@@ -26,7 +26,7 @@ function post(url,body) {
 function put(url,body) {
   return new Promise((resolve, reject) => {
     fetch(url_base+url,{ 
-      method: 'put',
+      method: 'PUT',
       body:    JSON.stringify(body),
       headers: { 
       'Content-Type': 'application/json' , 'authorization':User_key,'api-key':Ensena_key }})

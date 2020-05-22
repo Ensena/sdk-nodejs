@@ -42,7 +42,6 @@ let SetApp = (key) => {
   Ensena_key = key
 }
 let SetWebUser = () => {
-  Ensena_key = key
   let url_string = window.location.href
   let url = new URL(url_string);
   User_key = url.searchParams.get("TOKEN");

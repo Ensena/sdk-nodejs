@@ -42,7 +42,7 @@ let getUser = async (user,requestuser) => {
 
 let saveUser = async (data,user,requestuser) => {
   ctx.Data=data
-  const res = put('users'+User_key,data);
+  const res = put('users/'+User_key,data);
   return res;
 }
 let notificateUser = async (user,requestuser) => {
